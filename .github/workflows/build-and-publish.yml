@@ -31,7 +31,7 @@ jobs:
           context: ./
           tags: |
             sivn/sinusbot:latest 
-          push: ${{ github.ref == 'refs/heads/master' }}
+          push: ${{ github.ref == 'refs/heads/main' }}
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
